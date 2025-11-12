@@ -1,0 +1,231 @@
+/* GENERAL */
+:root {
+  --main-color: #353535;
+  --text-color: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+#profile 
+{ display: flex; 
+  justify-content: center; 
+  gap: 5rem; height: 80vh; }
+ .section__pic-container { display: flex; 
+  height: 400px;
+   width: 400px; 
+   margin: auto 0; } 
+   .section__text { 
+    align-self: center;
+     text-align: center; } 
+     .section__text p {
+       font-weight: 600; }
+      .section__text__p1 { text-align: center; } .section__text__p2 { font-size: 1.75rem; margin-bottom: 1rem; } .title { font-size: 3rem; text-align: center; } #socials-container { display: flex; justify-content: center; margin-top: 1rem; gap: 1rem; } .icon { cursor: pointer; height: 2rem; } /* BUTTONS */ .btn-container { display: flex; justify-content: center; gap: 1rem; } .btn { font-weight: 600; transition: all 300ms ease; padding: 1rem; width: 8rem; border-radius: 2rem; } .btn-color-1, .btn-color-2 { border: rgb(53, 53, 53) 0.1rem solid; } .btn-color-1:hover, .btn-color-2:hover { cursor: pointer; } .btn-color-1, .btn-color-2:hover { background: rgb(53, 53, 53); color: white; } .btn-color-1:hover { background: rgb(0, 0, 0); } .btn-color-2 { background: none; } .btn-color-2:hover { border: rgb(255, 255, 255) 0.1rem solid; }
+@keyframes typing{
+    0%{
+        content: "W";   
+    }
+    2%{
+        content: " We"; 
+       
+    }
+    4%{
+        content: "We De";
+    }
+    6%{
+        content: "We Dev";
+    }
+    8%{
+        content: "We Deve";
+    }
+    10%{
+        content: "We Devel";
+    }
+    12%{
+        content: "We Develo";
+    }
+    14%{
+        content: "We Develop";
+    }
+    16%{
+        content: "We Develope";
+    }
+    18%{
+        content: "We Developer";
+    }
+    20%{
+        content: "p";
+    }
+    22%{
+        content: "ph";
+    }
+    24%{
+        content: "pho";
+    }
+    26%{
+        content: "phot";
+    }
+    28%{
+        content: "photo";
+    }
+    30%{
+        content: "photog";
+    }
+    32%{
+        content: "photogr";
+    }
+    34%{
+        content: "photogra";
+    }
+    36%{
+        content: "photograp";
+    }
+    38%{
+        content: "photograph";
+    }
+    40%{
+        content: "photographe";
+    }
+    42%{
+        content: "photographer";
+    }
+    44%{
+        content: "f";
+    }
+    46%{
+        content: "fr";
+    }
+    48%{
+        content: "fre";
+    }
+    50%{
+        content: "free";
+    }
+    52%{
+        content: "freel";
+    }
+    54%{
+        content: "freela";
+    }
+    56%{
+        content: "freelan";
+    }
+    58%{
+        content: "freelanc";
+    }
+    60%{
+        content: "freelance";
+    }
+
+}
+section {
+  padding: 4vh 10rem;
+  min-height: 96vh;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  width: 2rem;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 0.1rem solid var(--main-color);
+  border-radius: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+/* About */
+.about-pic {
+  border-radius: 2rem;
+  width: 300px;
+}
+
+/* Projects */
+.project-card {
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* Contact */
+.contact-info {
+  text-align: center;
+  line-height: 2;
+}
+.project-card {
+  width: 300px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.modal-content {
+  background: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 800px;
+  text-align: center;
+}
+.modal-img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.close {
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+.btn-container {
+  margin-top: 15px;
+}
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #0056b3;
+}
